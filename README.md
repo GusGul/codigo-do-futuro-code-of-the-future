@@ -13,7 +13,7 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 ### Front-End
 
-- Aula 01 - Iniciação ao JavaScript | Class 01 - Introduction to JavaScript
+- Aula 01 - Introdução ao JavaScript | Class 01 - Introduction to JavaScript
 
 ### Back-End
 
