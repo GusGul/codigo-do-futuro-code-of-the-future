@@ -14,6 +14,7 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 ### Front-End
 
 - Aula 01 - Introdução ao JavaScript | Class 01 - Introduction to JavaScript
+- Aula 02 - Introdução ao JavaScript II | Class 02 - Introduction to JavaScript II
 
 ### Back-End
 
