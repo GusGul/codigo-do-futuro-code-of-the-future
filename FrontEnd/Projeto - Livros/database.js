@@ -62,6 +62,15 @@ const livros = [
         recomenda: true,
         leu: true
     }
+    {
+        id: 8,
+        nome: "Em Chamas",
+        autor: "Suzanne Collins",
+        categoria: "Distopia",
+        paginas: 416,
+        recomenda: true,
+        leu: true
+    }
 ]
 
 module.exports = livros
