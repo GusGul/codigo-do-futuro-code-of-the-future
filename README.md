@@ -8,6 +8,13 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 - Aula 01 - Metodologias Ágeis | Class 01 - Agile Methodology
 - Aula 02 - Git | Class 02 - Git
+- Aula 03 - JavaScript Básico | Class 03 - Basic JavaScript
+  - Template String
+  - Operador Ternário | Ternary Operator
+  - Arrow Functions
+  - Arrays; Spreads
+  - Destructuring
+  - SPA; PWA; Web Components
 
 ## Aulas Síncronas 
 
