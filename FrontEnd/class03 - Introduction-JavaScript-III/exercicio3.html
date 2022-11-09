@@ -32,7 +32,7 @@ com nome, matricula, notas, média, aprovado/reprovado/recuperação
         let numeroAlunos = Number(prompt("Informe a quantidade de alunos que serão cadastrados: "));
 
         //Cadastramento dos dados dos alunos
-        for(i=0; i<numeroAlunos; i++) {
+        for(let i=0; i<numeroAlunos; i++) {
             alert(`${i+1}º Aluno!`);
             let nome = prompt("Nome: ");
             let matricula = prompt("Nº da matrícula: ");
@@ -59,7 +59,7 @@ com nome, matricula, notas, média, aprovado/reprovado/recuperação
 
         //Mostrando todos os dados de cada "objeto aluno" dentro do array de alunos
         alert("Relatório dos Alunos: ");
-        for(i=0; i<alunos.length; i++){
+        for(let i=0; i<alunos.length; i++){
             alert(`
                 Nome: ${alunos[i].Nome}
                 Matrícula: ${alunos[i].Matricula}
