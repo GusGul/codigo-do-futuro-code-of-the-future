@@ -21,39 +21,39 @@ Se ele não poder viajar, mostre o quanto falta para o mesmo economizar.
         3- Maceió
         4- Ribeirão Preto
     `))
+    let valorViagem = 0;
 
-    //Resposta ao usuário, mostrando se ele pode ou não pode realizar a viagem.
+    //Definindo o valor da viagem com base no local de destino
     switch(viagemUsuario){
         case 1:
-            if(dinheiroUsuario >= 15000){
-                alert(nomeUsuario + ", você possui dinheiro suficiente para fazer essa viagem!");
-            } else {
-                alert(nomeUsuario + ", seu saldo é insuficiente para realizar a viagem...");
-            }
+            valorViagem = 15000;
             break;
         case 2: 
-            if(dinheiroUsuario >= 12000){
-                alert(nomeUsuario + ", você possui dinheiro suficiente para fazer essa viagem!");
-            } else {
-                alert(nomeUsuario + ", seu saldo é insuficiente para realizar a viagem...");
-            }
+            valorViagem = 12000;
             break;
         case 3: 
-            if(dinheiroUsuario >= 8000){
-                alert(nomeUsuario + ", você possui dinheiro suficiente para fazer essa viagem!");
-            } else {
-                alert(nomeUsuario + ", seu saldo é insuficiente para realizar a viagem...");
-            }
+            valorViagem = 8000;
             break;
         case 4: 
-            if(dinheiroUsuario >= 5000){
-                alert(nomeUsuario + ", você possui dinheiro suficiente para fazer essa viagem!");
-            } else {
-                alert(nomeUsuario + ", seu saldo é insuficiente para realizar a viagem...");
-            }
+            valorViagem = 5000;
             break;
         default: 
             alert("Número da viagem inválido.");
             break;
+    }
+
+    //Checando se a viagem possui algum valor
+    if(valorViagem == 0){
+        alert("Valor da viagem inválido.");
+    }
+
+    //Calculando quanto dinheiro irá sobrar para o usuário
+    let sobraUsuario = dinheiroUsuario - valorViagem;
+
+    //Mostrando se o cliente poderá ou não realizar a viagem
+    if(sobraUsuario < 0){
+        alert(nomeUsuario + ", infelizmente você não possui dinheiro suficiente para realizar essa viagem...");
+    } else {
+        alert(nomeUsuario + ", parabéns! Você possui dinheiro suficiente para realizar essa viagem.\nSeu dinheiro restante será: R$" + sobraUsuario);
     }
 </script>
