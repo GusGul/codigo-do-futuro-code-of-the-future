@@ -26,21 +26,21 @@ com nome, matricula, notas, média, aprovado/reprovado/recuperação
     function main() {
 
         //Declaração do array de alunos
-        alunos = [];
+        let alunos = [];
 
         //Requisição da quantidade de alunos que serão cadastrados
-        numeroAlunos = Number(prompt("Informe a quantidade de alunos que serão cadastrados: "));
+        let numeroAlunos = Number(prompt("Informe a quantidade de alunos que serão cadastrados: "));
 
         //Cadastramento dos dados dos alunos
         for(i=0; i<numeroAlunos; i++) {
             alert(`${i+1}º Aluno!`);
-            nome = prompt("Nome: ");
-            matricula = prompt("Nº da matrícula: ");
-            nota1 = Number(prompt("Nota N1: "));
-            nota2 = Number(prompt("Nota N2: "));
-            nota3 = Number(prompt("Nota N3: "));
-            media = calculaMedia(nota1, nota2, nota3);
-            status = verificaStatus(media);
+            let nome = prompt("Nome: ");
+            let matricula = prompt("Nº da matrícula: ");
+            let nota1 = Number(prompt("Nota N1: "));
+            let nota2 = Number(prompt("Nota N2: "));
+            let nota3 = Number(prompt("Nota N3: "));
+            let media = calculaMedia(nota1, nota2, nota3);
+            let status = verificaStatus(media);
 
             //Criação do objeto do aluno
             aluno = {
@@ -72,7 +72,7 @@ com nome, matricula, notas, média, aprovado/reprovado/recuperação
 
     //Função para calcular a média
     function calculaMedia(n1, n2, n3) {
-        media = (n1 + n2 + n3) / 3;
+        let media = (n1 + n2 + n3) / 3;
         return media;
     }
 
