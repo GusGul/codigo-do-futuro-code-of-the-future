@@ -22,16 +22,21 @@ first = prompt('Indique o primeiro número da sequência')
 last = prompt('Indique o ultimo número da sequência')
 
 <script>
-    //solicitando o número do usuário
-    let numInicio = Number(prompt("Informe o número de início: "));
+    do{
+        //solicitando o número do usuário
+        var primNum = Number(prompt("Informe o primeiro número: "));
+        //solicitando o número final do usuário
+        var ultNum = Number(prompt("Informe o último número: "));
 
-    //solicitando o número final do usuário
-    let numFinal = Number(prompt("Informe o número final: "));
+        if(primNum >= ultNum){
+            alert("O primeiro número precisa ser 'MENOR' que o último!");
+        } else break;
+    } while(true);
 
     //operação
     alert("Estes são todos os números pares entre o intervalo de números informado: ");
-    for(let i=numInicio; i<=numFinal; i++){
-        if(i % 2 == 0) {
+    for(let i=primNum; i<=ultNum; i++){
+        if(i % 2 == 0){
             alert(i);
         }
     }
