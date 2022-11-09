@@ -1,0 +1,89 @@
+Francisco precisa de um sistema para gerenciar sua escola
+Neste sistema precisamos capturar o aluno com as seguintes informações
+
+aluno
+    - nome
+    - matricula
+    - notas
+
+as notas podem ser quantas o sistema quiser, ou seja deixe o usuário escolher a quantidade de notas
+
+neste sistema você irá precisar de um menu onde irá fazer o:
+1. Cadastro de alunos, digitando nome e matricula e notas
+2. Vai precisar de um relatório, onde irá mostrar a lista dos alunos
+com nome, matricula, notas, média, aprovado/reprovado/recuperação
+
+3. Critério:
+ se a nota for >= 7 aprovado
+ se a nota for entre 5 e menor que 7 - Recuperação
+ se a nota for menor que 5 -  Reprovado
+
+ <script>
+    //Chamada do programa (inicialização)
+    main();
+
+    //Função PRINCIPAL do programa
+    function main() {
+
+        //Declaração do array de alunos
+        alunos = [];
+
+        //Requisição da quantidade de alunos que serão cadastrados
+        numeroAlunos = Number(prompt("Informe a quantidade de alunos que serão cadastrados: "));
+
+        //Cadastramento dos dados dos alunos
+        for(i=0; i<numeroAlunos; i++) {
+            alert(`${i+1}º Aluno!`);
+            nome = prompt("Nome: ");
+            matricula = prompt("Nº da matrícula: ");
+            nota1 = Number(prompt("Nota N1: "));
+            nota2 = Number(prompt("Nota N2: "));
+            nota3 = Number(prompt("Nota N3: "));
+            media = calculaMedia(nota1, nota2, nota3);
+            status = verificaStatus(media);
+
+            //Criação do objeto do aluno
+            aluno = {
+                Nome: nome,
+                Matricula: matricula,
+                N1: nota1,
+                N2: nota2,
+                N3: nota3,
+                Media: media,
+                Status: status
+            }
+
+            //Inserindo o objeto "aluno" dentro do array de alunos
+            alunos.push(aluno);
+        }
+
+        //Mostrando todos os dados de cada "objeto aluno" dentro do array de alunos
+        alert("Relatório dos Alunos: ");
+        for(i=0; i<alunos.length; i++){
+            alert(`
+                Nome: ${alunos[i].Nome}
+                Matrícula: ${alunos[i].Matricula}
+                Notas: ${alunos[i].N1}, ${alunos[i].N2}, ${alunos[i].N3}
+                Média: ${alunos[i].Media}
+                Status: ${alunos[i].Status}
+            `)
+        }
+    }
+
+    //Função para calcular a média
+    function calculaMedia(n1, n2, n3) {
+        media = (n1 + n2 + n3) / 3;
+        return media;
+    }
+
+    //Função para verificar se um aluno está aprovado, reprovado ou em recuperação
+    function verificaStatus(media) {
+        if(media >= 7) {
+            return "Aprovado";
+        } else if(media >= 5) {
+            return "Recuperação";
+        } else {
+            return "Reprovado";
+        }
+    }
+ </script>
