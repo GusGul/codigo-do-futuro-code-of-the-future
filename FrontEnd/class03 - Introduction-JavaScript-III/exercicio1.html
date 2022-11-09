@@ -54,6 +54,6 @@ Se ele não poder viajar, mostre o quanto falta para o mesmo economizar.
     if(sobraUsuario < 0){
         alert(nomeUsuario + ", infelizmente você não possui dinheiro suficiente para realizar essa viagem...");
     } else {
-        alert(nomeUsuario + ", parabéns! Você possui dinheiro suficiente para realizar essa viagem.\nSeu dinheiro restante será: R$" + sobraUsuario);
+        alert(nomeUsuario + ", parabéns! Você possui dinheiro suficiente para realizar essa viagem.\nSeu dinheiro restante será: " + sobraUsuario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
     }
 </script>
