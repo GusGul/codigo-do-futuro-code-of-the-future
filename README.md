@@ -27,6 +27,10 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 - Aula 01 - Introdução ao JavaScript | Class 01 - Introduction to JavaScript
 - Aula 02 - Introdução ao JavaScript II | Class 02 - Introduction to JavaScript II
+- Aula 03 - Introdução ao JavaScript III | Class 03 - Introduction to JavaScript III
+- Aula 04 - Angular: Componentes I | Class 01 - Angular: Components I
+- Aula 05 - Angular: Componentes II | Class 02 - Angular: Components II 
+- Aula 06 - Angular: Componentes III | Class 03 - Angular: Components III
 
 ### Back-End
 
