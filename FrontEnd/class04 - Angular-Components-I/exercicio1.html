@@ -1,6 +1,11 @@
 <script>
+    //Contexto
+    const appNotas = {}
+
+    appNotas.alunos = []
+
     //Função para a criação do menu
-    const menu = () => {
+    appNotas.menu = () => {
         let opcao = prompt(`
             Escolha uma opção:
             1. Cadastrar novo(a) aluno
@@ -10,10 +15,10 @@
 
         switch(opcao) {
             case "1":
-                cadastroAluno();
+                appNotas.cadastroAluno();
                 break;
             case "2":
-                mostraAlunos();
+                appNotas.mostraAlunos();
                 break;
             case "3":
                 return;
@@ -21,11 +26,11 @@
                 alert("Opção inválida!");
         }
 
-        menu();
+        appNotas.menu();
     }
     
     //Função para cadastrar um aluno
-    const cadastroAluno = () => {
+    appNotas.cadastroAluno = () => {
         const aluno = {}
 
         aluno.nome = prompt("Digite o nome do aluno: ");
@@ -42,21 +47,21 @@
 
         aluno.media = soma / aluno.notas.length;
 
-        aluno.situacao = verificaSituacao(aluno.media);
+        aluno.situacao = appNotas.verificaSituacao(aluno.media);
 
         const confirmacao = confirm(
             `
                 Salvar essas informações?
-                ${mostraAluno(aluno)}
+                ${appNotas.mostraAluno(aluno)}
             `
         );
         if (confirmacao){
-            alunos.push(aluno);
+            appNotas.alunos.push(aluno);
         }
     }
 
     //Função para mostrar os dados de um único aluno
-    const mostraAluno = (aluno) => {
+    appNotas.mostraAluno = (aluno) => {
         return `
             Aluno: ${aluno.nome}
             Matrícula: ${aluno.matricula}
@@ -67,11 +72,11 @@
     }
 
     //Função para mostrar todos os alunos
-    const mostraAlunos = () => {
+    appNotas.mostraAlunos = () => {
         let msg = "";
-        for (let aluno of alunos) {
+        for (let aluno of appNotas.alunos) {
             msg += `
-                ${mostraAluno(aluno)}
+                ${appNotas.mostraAluno(aluno)}
                 ----------------------------------------------------------------
             `
         }   
@@ -80,7 +85,7 @@
     }
 
     //Função para verificar se um aluno está aprovado, reprovado ou em recuperação
-    const verificaSituacao = (media) => {
+    appNotas.verificaSituacao = (media) => {
         if(media >= 7) {
             return "Aprovado";
         } else if(media >= 5 && media < 7) {
@@ -89,10 +94,7 @@
             return "Reprovado";
         }
     }
-
-    //Declaração da variável global
-    const alunos = [];
  </script>
 
  <h1>Bem vindo ao sistema escolar de cadastro de alunos!</h1>
- <button onclick="menu()">INICIAR</button>
+ <button onclick="appNotas.menu()">INICIAR</button>
