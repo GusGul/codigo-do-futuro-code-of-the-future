@@ -1,4 +1,28 @@
 <script>
+    class Aluno {
+        constructor() {
+            this.nome = "";
+            this.matricula = "";
+            this.notas = [];
+        }
+
+        media(){
+            let soma = 0
+            for(let i=0; i<this.notas.length; i++){
+                soma += this.notas[i];
+            }
+
+            return soma / this.notas.length;
+        }
+
+        situacao(){
+            const mediaCalculada = this.media();
+            if(mediaCalculada >= 7) return "Aprovado";
+            if(mediaCalculada >= 5 && mediaCalculada < 7) return "Recuperação";
+            return "Reprovado";
+        }
+    }
+
     //Contexto
     const appNotas = {}
 
@@ -31,7 +55,7 @@
     
     //Função para cadastrar um aluno
     appNotas.cadastroAluno = () => {
-        const aluno = {}
+        const aluno = new Aluno();
 
         aluno.nome = prompt("Digite o nome do aluno: ");
         aluno.matricula = prompt("Digite o Nº da matrícula do aluno: ");
@@ -44,10 +68,6 @@
             aluno.notas.push(nota);
             soma += nota;
         }
-
-        aluno.media = soma / aluno.notas.length;
-
-        aluno.situacao = appNotas.verificaSituacao(aluno.media);
 
         const confirmacao = confirm(
             `
@@ -66,8 +86,8 @@
             Aluno: ${aluno.nome}
             Matrícula: ${aluno.matricula}
             Notas: ${aluno.notas.join(", ")}
-            Média Final: ${aluno.media.toFixed(2)}
-            Status: ${aluno.situacao}
+            Média Final: ${aluno.media()}
+            Status: ${aluno.situacao()}
         `
     }
 
@@ -86,13 +106,7 @@
 
     //Função para verificar se um aluno está aprovado, reprovado ou em recuperação
     appNotas.verificaSituacao = (media) => {
-        if(media >= 7) {
-            return "Aprovado";
-        } else if(media >= 5 && media < 7) {
-            return "Recuperação";
-        } else {
-            return "Reprovado";
-        }
+        
     }
  </script>
 
