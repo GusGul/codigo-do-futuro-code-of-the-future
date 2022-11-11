@@ -1,90 +1,98 @@
 <script>
-    //Chamada do programa (inicialização)
-    main();
+    //Função para a criação do menu
+    const menu = () => {
+        let opcao = prompt(`
+            Escolha uma opção:
+            1. Cadastrar novo(a) aluno
+            2. Exibir alunos
+            3. Sair
+        `);
 
-    //Função PRINCIPAL do programa
-    function main() {
+        switch(opcao) {
+            case "1":
+                cadastroAluno();
+                break;
+            case "2":
+                mostraAlunos();
+                break;
+            case "3":
+                return;
+            default:
+                alert("Opção inválida!");
+        }
 
-        //Declaração das variáveis base
-        const alunos = [];
-        let opcao = "";
+        menu();
+    }
+    
+    //Função para cadastrar um aluno
+    const cadastroAluno = () => {
+        const aluno = {}
 
-        alert("Bem vindo ao sistema escolar");
+        aluno.nome = prompt("Digite o nome do aluno: ");
+        aluno.matricula = prompt("Digite o Nº da matrícula do aluno: ");
+        aluno.notas = [];
 
-        do {
-            opcao = prompt(`
-                Escolha uma opção:
-                1. Cadastrar novo(a) aluno
-                2. Exibir alunos
-                3. Sair
-            `);
+        let qtdNotas = prompt("Digite quantas notas o aluno teve: ");
+        let soma = 0;
+        for (let i=0; i<qtdNotas; i++){
+            let nota = Number(prompt(`Digite o valor da ${i+1}ª nota: `));
+            aluno.notas.push(nota);
+            soma += nota;
+        }
 
-            switch(opcao) {
-                case "1":
-                    const aluno = {}
+        aluno.media = soma / aluno.notas.length;
 
-                    aluno.nome = prompt("Digite o nome do aluno: ");
-                    aluno.matricula = prompt("Digite o Nº da matrícula do aluno: ");
-                    aluno.notas = [];
+        aluno.situacao = verificaSituacao(aluno.media);
 
-                    let qtdNotas = prompt("Digite quantas notas o aluno teve: ");
-                    let soma = 0;
-                    for (let i=0; i<qtdNotas; i++){
-                        let nota = Number(prompt(`Digite o valor da ${i+1}ª nota: `));
-                        aluno.notas.push(nota);
-                        soma += nota;
-                    }
-
-                    aluno.media = soma / aluno.notas.length;
-
-                    aluno.situacao = verificaSituacao(aluno.media);
-
-                    const confirmacao = confirm(
-                        `
-                            Salvar essas informações?
-                            Aluno: ${aluno.nome}
-                            Matrícula: ${aluno.matricula}
-                            Notas: ${aluno.notas}
-                            Média Final: ${aluno.media}
-                            Status: ${aluno.situacao}
-                        `
-                    );
-                    if (confirmacao){
-                        alunos.push(aluno);
-                    }
-                    break;
-                case "2":
-                    let msg = "";
-                    for (let aluno in alunos) {
-                        msg += `
-                            Aluno: ${aluno.nome}
-                            Matrícula: ${aluno.matricula}
-                            Notas: ${aluno.notas.join(", ")}
-                            Média Final: ${aluno.media}
-                            Status: ${aluno.situacao}
-                            ----------------------------------------------------------------
-                        `
-                    }   
-
-                    alert(msg);
-                    break;
-                case "3":
-                    alert("Saindo do sistema.")
-                    break;
-                default:
-                    alert("Opção inválida!");
-            }
-        } while (opcao !== "3");
-
-        //Função para verificar se um aluno está aprovado, reprovado ou em recuperação
-        function verificaSituacao(media) {
-            if(media >= 7) {
-                return "Aprovado";
-            } else if(media >= 5 && media < 7) {
-                return "Recuperação";
-            } else {
-                return "Reprovado";
-            }
+        const confirmacao = confirm(
+            `
+                Salvar essas informações?
+                ${mostraAluno(aluno)}
+            `
+        );
+        if (confirmacao){
+            alunos.push(aluno);
         }
     }
+
+    //Função para mostrar os dados de um único aluno
+    const mostraAluno = (aluno) => {
+        return `
+            Aluno: ${aluno.nome}
+            Matrícula: ${aluno.matricula}
+            Notas: ${aluno.notas.join(", ")}
+            Média Final: ${aluno.media.toFixed(2)}
+            Status: ${aluno.situacao}
+        `
+    }
+
+    //Função para mostrar todos os alunos
+    const mostraAlunos = () => {
+        let msg = "";
+        for (let aluno of alunos) {
+            msg += `
+                ${mostraAluno(aluno)}
+                ----------------------------------------------------------------
+            `
+        }   
+
+        alert(msg);
+    }
+
+    //Função para verificar se um aluno está aprovado, reprovado ou em recuperação
+    const verificaSituacao = (media) => {
+        if(media >= 7) {
+            return "Aprovado";
+        } else if(media >= 5 && media < 7) {
+            return "Recuperação";
+        } else {
+            return "Reprovado";
+        }
+    }
+
+    //Declaração da variável global
+    const alunos = [];
  </script>
+
+ <h1>Bem vindo ao sistema escolar de cadastro de alunos!</h1>
+ <button onclick="menu()">INICIAR</button>
