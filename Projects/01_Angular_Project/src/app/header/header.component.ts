@@ -7,11 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isDisabled = true;
+
   @Input() title = "Cabeçalho";
 
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.isDisabled = false;
+    }, 5000);
   }
 
 }

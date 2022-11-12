@@ -1,0 +1,26 @@
+.default {
+    max-width: 1024px;
+    margin: 40px auto 40px auto;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin-top: 60px; 
+}
+
+h1 {
+    width: 100%;
+}
+
+.subtitulo {
+    color: rgba(175,175,175,255);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #505050;
+}
+
+.about {
+    
+}
