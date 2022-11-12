@@ -1,0 +1,114 @@
+<script>
+    class Aluno {
+        constructor() {
+            this.nome = "";
+            this.matricula = "";
+            this.notas = [];
+        }
+
+        somaDasNotas(){
+            let soma = 0
+            for(let i=0; i<this.notas.length; i++){
+                soma += Number(this.notas[i]);
+            }
+
+            return soma;
+        }
+
+        media(){
+            return this.somaDasNotas() / this.notas.length;
+        }
+
+        situacao(){
+            const mediaCalculada = this.media();
+            if(mediaCalculada >= 7) return "Aprovado";
+            if(mediaCalculada >= 5 && mediaCalculada < 7) return "Recuperação";
+            return "Reprovado";
+        }
+    }
+
+    //Contexto
+    const appNotas = {}
+
+    appNotas.alunos = []
+
+    //Função para a criação do menu
+    appNotas.menu = () => {
+        let opcao = prompt(`
+            Escolha uma opção:
+            1. Cadastrar novo(a) aluno
+            2. Exibir alunos
+            3. Sair
+        `);
+
+        switch(opcao) {
+            case "1":
+                appNotas.cadastroAluno();
+                break;
+            case "2":
+                appNotas.mostraAlunos();
+                break;
+            case "3":
+                return;
+            default:
+                alert("Opção inválida!");
+        }
+
+        appNotas.menu();
+    }
+    
+    //Função para cadastrar um aluno
+    appNotas.cadastroAluno = () => {
+        const aluno = new Aluno();
+
+        aluno.nome = document.getElementById("nome").value;
+        aluno.matricula = document.getElementById("matricula").value;
+        aluno.notas = document.getElementById("notas").value.split(",");
+
+        appNotas.alunos.push(aluno);
+    }
+
+    //Função para mostrar os dados de um único aluno
+    appNotas.mostraAluno = (aluno) => {
+        return `
+            Aluno: ${aluno.nome}
+            Matrícula: ${aluno.matricula}
+            Notas: ${aluno.notas.join(", ")}
+            Média Final: ${aluno.media()}
+            Status: ${aluno.situacao()}
+        `
+    }
+
+    //Função para mostrar todos os alunos
+    appNotas.mostraAlunos = () => {
+        let msg = "";
+        for (let aluno of appNotas.alunos) {
+            msg += `
+                ${appNotas.mostraAluno(aluno)}
+                ----------------------------------------------------------------
+            `
+        }   
+
+        alert(msg);
+    }
+
+    //Função para verificar se um aluno está aprovado, reprovado ou em recuperação
+    appNotas.verificaSituacao = (media) => {
+        
+    }
+ </script>
+
+ <h1>Bem vindo ao sistema escolar de cadastro de alunos!</h1>
+
+ <form style="display: none;">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="matricula">Matrícula:</label><br>
+    <input type="text" id="matricula" name="matricula"><br>
+    <label for="notas">Notas separadas por vírgula:</label><br>
+    <input type="text" id="notas" name="notas"><br>
+    <button type="button" onclick="appNotas.cadastroAluno()">Cadastrar</button>
+ </form>
+
+ <button onclick="">Cadastrar Aluno</button><br>
+ <button onclick="">Listar Aluno</button><br>
