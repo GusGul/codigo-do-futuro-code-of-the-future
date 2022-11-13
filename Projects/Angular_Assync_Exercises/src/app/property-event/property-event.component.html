@@ -1,0 +1,29 @@
+<section class="property-event">
+    <br>
+    <article>
+        <h3>Interpolation / Interpolação</h3>
+        <p>String renderizada com interpolação: '{{ interpolationTest }}'</p>
+        <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+        <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+        <p>Curto e gosto de Angular: {{ cursoAngular && getCursoAngular() }}</p>
+    </article>
+
+    <br><hr><br>
+
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlImagem }}" title="imagem chamada com interpolação">
+        <img [src]="urlImagem" title="imagem chamada com property binding">
+    </article>
+
+    <br><hr><br>
+
+    <div>
+        <h3>Exercício Contador: {{ initValor }}</h3>
+        <button (click)="increment()"> INCREMENTAR </button>
+        <button (click)="decrement()"> DECREMENTAR </button>
+    </div>
+
+    <br><hr><br>
+
+</section>

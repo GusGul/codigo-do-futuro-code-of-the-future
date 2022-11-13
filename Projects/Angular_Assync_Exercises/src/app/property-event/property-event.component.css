@@ -1,0 +1,11 @@
+.property-event {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    margin-right: 5px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+}
