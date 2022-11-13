@@ -1,5 +1,8 @@
 <app-header [title]="title"></app-header>
 
-<app-property-event></app-property-event>
+<app-property-event>
+    [valor]="10"
+    (valorMudou)="onValorAtualizadoNoContador($event)"
+</app-property-event>
 
 <router-outlet></router-outlet>

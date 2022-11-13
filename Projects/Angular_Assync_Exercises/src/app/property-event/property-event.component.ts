@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-property-event',
@@ -11,7 +11,8 @@ export class PropertyEventComponent implements OnInit {
   cursoAngular: boolean = true;
   urlImagem = "favicon.ico";
 
-  initValor: number = 0;
+  @Input() initValor = 0;
+  @Output() valorMudou = new EventEmitter();
 
   getCursoAngular(){
     return true;
@@ -22,9 +23,11 @@ export class PropertyEventComponent implements OnInit {
 
   increment(){
     this.initValor++;
+    this.valorMudou.emit(this.initValor);
   }
   decrement(){
     this.initValor--;
+    this.valorMudou.emit(this.initValor);
   }
 
   constructor() { }

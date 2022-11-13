@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Exercícios de Angular';
+
+  onValorAtualizadoNoContador(novoValor: any){
+    console.log("Novo valor: ", novoValor);
+  }
 }
