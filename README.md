@@ -20,6 +20,9 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
   - Augury
 - Aula 05 - JavaScript: Diretivas | Class 05 - JavaScript: Directives
 - Aula 06 - Encapsulamento e Pipes | Class 06 - Encapsulation and Pipes
+- Aula 07 - Rotas e Módulos | Class 07 - Routes and Modules
+- Aula 08 - Interfaces | Class 08 - Interfaces
+- Aula 09 - Formulários | Class 09 - Forms
 
 ## Aulas Síncronas | Live Classes
 
