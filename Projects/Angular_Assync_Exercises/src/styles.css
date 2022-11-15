@@ -6,3 +6,10 @@
     scroll-behavior: smooth;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+button {
+    margin-right: 5px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+}
