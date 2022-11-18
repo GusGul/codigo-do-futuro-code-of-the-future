@@ -12,3 +12,7 @@ h1 {
     color: whitesmoke;
     text-transform: uppercase;
 }
+
+a {
+    text-decoration: none;
+}

@@ -1,8 +1,9 @@
 <section class="pipes">
+    <br>
     <h3>Exercício Pipes</h3>
 
     <p>Título: {{ filme.nome | uppercase }}</p>
-    <p>Avaliação: {{ filme.estrelas | number:"1.2-2" }}</p>
+    <p>Avaliação: {{ filme.estrelas | number:"1.2-2" }} ⭐</p>
     <p>Preço do Aluguel: {{ filme.precoAluguel | currency:"BRL" }}</p>
     <p>Data de Lançamento: {{ filme.dataLancamento | date:"fullDate" }}</p>
 </section>

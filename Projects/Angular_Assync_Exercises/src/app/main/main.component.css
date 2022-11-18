@@ -1,0 +1,14 @@
+nav {
+    margin: 0 auto;
+    max-width: 720px;
+    font-size: 28px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+    color: black;
+    margin: 20px auto;
+}

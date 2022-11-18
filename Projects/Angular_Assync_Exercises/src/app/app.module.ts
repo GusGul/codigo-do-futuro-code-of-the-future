@@ -10,6 +10,7 @@ import { ExercicioPipesComponent } from './exercicio-pipes/exercicio-pipes.compo
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { MainComponent } from './main/main.component';
 
 registerLocaleData(localePt, 'pt')
 
@@ -19,7 +20,8 @@ registerLocaleData(localePt, 'pt')
     HeaderComponent,
     PropertyEventComponent,
     ExercicioDiretivasComponent,
-    ExercicioPipesComponent
+    ExercicioPipesComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
