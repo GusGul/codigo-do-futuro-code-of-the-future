@@ -18,10 +18,12 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
     "bootstrap": "^5.2.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "@ng-bootstrap/ng-bootstrap": "^2.0.0-alpha.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.9",
