@@ -5,13 +5,15 @@ import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exe
 import { MainComponent } from './main/main.component';
 import { PropertyEventComponent } from './shared/components/property-event/property-event.component';
 import { ExercicioFormComponent } from './shared/components/exercicio-form/exercicio-form.component';
+import { ExercicioProdutosComponent } from './shared/components/exercicio-produtos/exercicio-produtos.component';
 
 const routes: Routes = [
   {path:'', component: MainComponent},
   {path:'property-binding', component: PropertyEventComponent },
   {path:'diretivas', component: ExercicioDiretivasComponent },
   {path:'pipes', component: ExercicioPipesComponent },
-  {path:'form', component: ExercicioFormComponent}
+  {path:'form', component: ExercicioFormComponent},
+  {path:'product', component: ExercicioProdutosComponent},
 ];
 
 @NgModule({

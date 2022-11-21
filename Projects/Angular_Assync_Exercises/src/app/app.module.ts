@@ -1,5 +1,6 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { MainComponent } from './main/main.component';
 import { ExercicioFormComponent } from './shared/components/exercicio-form/exercicio-form.component';
+import { ExercicioProdutosComponent } from './shared/components/exercicio-produtos/exercicio-produtos.component';
 
 registerLocaleData(localePt, 'pt')
 
@@ -23,11 +25,13 @@ registerLocaleData(localePt, 'pt')
     ExercicioDiretivasComponent,
     ExercicioPipesComponent,
     MainComponent,
-    ExercicioFormComponent
+    ExercicioFormComponent,
+    ExercicioProdutosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [{
     provide: LOCALE_ID,
