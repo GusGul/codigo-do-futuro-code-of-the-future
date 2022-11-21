@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'experience', component: ExperienceComponent},
   {path:'education', component: EducationComponent},
   {path:'skills', component: SkillsComponent},
-  {path:'form', component: FormComponent}
+  {path:'contact', component: FormComponent}
 ];
 
 @NgModule({
