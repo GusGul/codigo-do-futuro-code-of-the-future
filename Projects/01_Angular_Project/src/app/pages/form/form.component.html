@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <button type="button" class="btn btn-primary" (click)="clicou()">Enviar</button>
+        <button type="button" class="btn btn-primary" (click)="adicionar()">Enviar</button>
     </form>
 
     <br><br><br>
@@ -43,6 +43,7 @@
             <th scope="col">Email</th>
             <th scope="col">Telefone</th>
             <th scope="col">Orçamento Inicial</th>
+            <th scope="col">Ações</th>
           </tr>
         </thead>
         <tbody>
@@ -52,6 +53,8 @@
             <td>{{ cliente.email }}</td>
             <td>{{ cliente.telefone | formatarTelefone}}</td>
             <td>{{ cliente.valor.toString() | currency:"BRL" }}</td>
+            <td><button type="button" class="btn btn-warning bg-warning">Alterar</button>
+              <button type="button" class="btn btn-danger bg-danger text-dark">Excluir</button></td>
           </tr>
         </tbody>
       </table>

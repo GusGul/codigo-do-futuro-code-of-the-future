@@ -21,7 +21,7 @@ export class FormComponent implements OnInit {
     
   }
 
-  clicou() {
+  adicionar() {
     let id = this.clientes.length + 1;
     let novoCliente:Cliente = {
       id: id,

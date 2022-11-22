@@ -6,6 +6,7 @@ import { MainComponent } from './main/main.component';
 import { PropertyEventComponent } from './shared/components/property-event/property-event.component';
 import { ExercicioFormComponent } from './shared/components/exercicio-form/exercicio-form.component';
 import { ExercicioProdutosComponent } from './shared/components/exercicio-produtos/exercicio-produtos.component';
+import { TabelaProdutosComponent } from './shared/components/tabela-produtos/tabela-produtos.component';
 
 const routes: Routes = [
   {path:'', component: MainComponent},
@@ -14,6 +15,8 @@ const routes: Routes = [
   {path:'pipes', component: ExercicioPipesComponent },
   {path:'form', component: ExercicioFormComponent},
   {path:'product', component: ExercicioProdutosComponent},
+  {path:'product/:id', component: ExercicioProdutosComponent},
+  {path:'product-list', component: TabelaProdutosComponent},
 ];
 
 @NgModule({

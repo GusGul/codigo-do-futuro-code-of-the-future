@@ -1,0 +1,32 @@
+<div class="centraliza">
+    <div *ngIf="products.length <= 0">
+        <button class="btn btn-primary mb-3" (click)="new()">Add a New Product</button>
+        <div class="alert alert-primary" role="alert">
+            There's no products on the list!
+        </div>
+    </div>
+    <div *ngIf="products.length > 0">
+        <button class="btn btn-primary mb-3" (click)="new()">Add a New Product</button>
+        <table class="table table-dark bg-primary">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <th>{{ product.id }}</th>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price.toString() | currency}}</td>
+                    <td>{{ product.description }}</td>
+                    <td><button type="button" class="btn btn-warning bg-warning" (click)="edit(product)">Update</button>
+                    <button type="button" class="btn btn-danger bg-danger text-dark" (click)="delete(product)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
