@@ -1,3 +1,39 @@
-<div [ngClass]="exProduto ? 'azul' : 'roxo'">
-    <a routerLink="/" (click)="clicou()"><h1>{{ title }}</h1></a>
-</div>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" routerLink="/">
+        <img src="favicon.ico" height="30" width="30" alt="" loading="lazy" />
+      </a>
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/property-binding">Data Binding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/diretivas">Diretivas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/pipes">Pipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product">Produtos</a><!--<span> ( {{ qtdProdutos }} )</span>-->
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>

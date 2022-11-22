@@ -12,7 +12,6 @@ import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exe
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { MainComponent } from './main/main.component';
-import { ExercicioFormComponent } from './shared/components/exercicio-form/exercicio-form.component';
 import { ExercicioProdutosComponent } from './shared/components/exercicio-produtos/exercicio-produtos.component';
 import { TabelaProdutosComponent } from './shared/components/tabela-produtos/tabela-produtos.component';
 
@@ -26,7 +25,6 @@ registerLocaleData(localePt, 'pt')
     ExercicioDiretivasComponent,
     ExercicioPipesComponent,
     MainComponent,
-    ExercicioFormComponent,
     ExercicioProdutosComponent,
     TabelaProdutosComponent
   ],

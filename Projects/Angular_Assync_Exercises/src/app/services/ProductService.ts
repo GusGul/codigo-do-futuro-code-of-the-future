@@ -1,4 +1,4 @@
-import { Product } from "../interfaces/produto";
+import { Product } from "../interfaces/Produto";
 
 export class ProductService {
 
