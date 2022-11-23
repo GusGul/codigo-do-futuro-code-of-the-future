@@ -1,3 +1,4 @@
+import { ExCountriesComponent } from './shared/pages/ex-countries/ex-countries.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExercicioDiretivasComponent } from './shared/pages/exercicio-diretivas/exercicio-diretivas.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'product/:id', component: ExercicioProdutosComponent},
   {path:'product-list', component: TabelaProdutosComponent},
   {path:'http-api', component: ExercicioHttpApiComponent},
+  {path:'countries', component: ExCountriesComponent},
   {path:'**', component: NotFoundComponent},
 ];
 

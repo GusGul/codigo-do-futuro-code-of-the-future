@@ -1,35 +1,35 @@
-import { ExtratoService } from './../../../services/extrato.service';
+import { CountriesService } from './../../../services/countries.service';
+import { Country } from './../../../interfaces/Country';
 import { Component, OnInit } from '@angular/core';
-import { Transacao } from 'src/app/interfaces/Transacao';
-import { mergeMap, take } from 'rxjs/operators';
-import { finalize } from 'rxjs/operators';
+import { take, finalize } from 'rxjs';
+import { ExtratoService } from 'src/app/services/extrato.service';
 
 @Component({
-  selector: 'app-exercicio-http-api',
-  templateUrl: './exercicio-http-api.component.html',
-  styleUrls: ['./exercicio-http-api.component.css']
+  selector: 'app-ex-countries',
+  templateUrl: './ex-countries.component.html',
+  styleUrls: ['./ex-countries.component.css']
 })
-export class ExercicioHttpApiComponent implements OnInit {
-
+export class ExCountriesComponent implements OnInit {
+ 
   constructor(
-    private extratoService:ExtratoService
+    private countriesService:CountriesService
   ) { }
 
   ngOnInit(): void {
-    this.carregarExtrato();
+    this.carregarPais();
   }
 
-  transacoes:Transacao[] = [];
+  countries:Country[] = [];
   page:number = 1;
   loading!:Boolean;
   errorLoading!:Boolean;
 
-  carregarExtrato() {
+  carregarPais() {
     this.loading = true;
     this.errorLoading = false;
 
     // se 'inscrevendo' na chamada da api, o observer dará o 'response' assim que a chamada retornar.
-    this.extratoService.getTransacoes(this.page)
+    this.countriesService.getTransacoes(this.page)
       .pipe(
         take(1), // O take fará com que a gente se DESINSCREVA após o SUBSCRIBE. Quando isso for resolvido 1 vez, vamos se desinscrever.
         finalize(() => this.loading = false)
@@ -40,10 +40,10 @@ export class ExercicioHttpApiComponent implements OnInit {
       )
   }
 
-  onSuccess(response:Transacao[]){
+  onSuccess(response:Country[]){
     //this.loading = false; agora está sendo tratado pela função "finalize"
     this.errorLoading = false;
-    this.transacoes = response;
+    this.countries = response;
   }
 
   onError(error:any){
@@ -54,12 +54,12 @@ export class ExercicioHttpApiComponent implements OnInit {
 
   lastPage(){
     this.page = this.page - 1;
-    this.carregarExtrato();
+    this.carregarPais();
   }
 
   nextPage(){
     this.page = this.page + 1;
-    this.carregarExtrato();
+    this.carregarPais();
   }
 
 }

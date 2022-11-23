@@ -10,6 +10,7 @@ import { TabelaProdutosComponent } from './pages/tabela-produtos/tabela-produtos
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { ExercicioHttpApiComponent } from './pages/exercicio-http-api/exercicio-http-api.component';
+import { ExCountriesComponent } from './pages/ex-countries/ex-countries.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ExercicioHttpApiComponent } from './pages/exercicio-http-api/exercicio-
     ExercicioProdutosComponent,
     TabelaProdutosComponent,
     ExercicioHttpApiComponent,
+    ExCountriesComponent,
   ],
   imports: [
     CommonModule,
