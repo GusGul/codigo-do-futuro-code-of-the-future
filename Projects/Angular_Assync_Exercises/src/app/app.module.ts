@@ -1,37 +1,29 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { PropertyEventComponent } from './shared/components/property-event/property-event.component';
-import { ExercicioDiretivasComponent } from './shared/components/exercicio-diretivas/exercicio-diretivas.component';
-import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exercicio-pipes.component';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
-import { MainComponent } from './main/main.component';
-import { ExercicioProdutosComponent } from './shared/components/exercicio-produtos/exercicio-produtos.component';
-import { TabelaProdutosComponent } from './shared/components/tabela-produtos/tabela-produtos.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(localePt, 'pt')
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    PropertyEventComponent,
-    ExercicioDiretivasComponent,
-    ExercicioPipesComponent,
-    MainComponent,
-    ExercicioProdutosComponent,
-    TabelaProdutosComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    HttpClientModule,
   ],
   providers: [{
     provide: LOCALE_ID,

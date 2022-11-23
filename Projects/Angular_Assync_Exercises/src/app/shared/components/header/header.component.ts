@@ -1,3 +1,5 @@
+import { ActivatedRoute } from '@angular/router';
+import { ProductObserverService } from './../../../services/ProductObserver';
 import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -7,17 +9,17 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() title = "erro";
-
-  constructor() { }
+  constructor(
+    route: ActivatedRoute,
+    public productObserverService:ProductObserverService
+  ) {
+    // Sempre que mudar de rota, deve atualizar também
+    route.params.subscribe(val => {
+      this.productObserverService.updateQuantity()
+    })
+  }
 
   ngOnInit(): void {
   }
-
-  @Output() exProduto = false;
-
-  clicou(){
-    this.exProduto = false;
-  }
-
+  
 }

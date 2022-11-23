@@ -1,3 +1,4 @@
+import { ProductObserverService } from '../../../services/ProductObserver';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from 'src/app/interfaces/Produto';
@@ -10,7 +11,11 @@ import { ProductService } from 'src/app/services/ProductService';
 })
 export class ExercicioProdutosComponent implements OnInit {
 
-  constructor(private router:Router, private routerParams: ActivatedRoute) {
+  constructor(
+    private router:Router, 
+    private routerParams: ActivatedRoute,
+    private productObserverService:ProductObserverService
+    ) {
 
   }
   
@@ -45,6 +50,8 @@ export class ExercicioProdutosComponent implements OnInit {
         description: this.product.description
       });
     }
+
+    this.productObserverService.updateQuantity();
     this.router.navigateByUrl("/product-list");
   }
 

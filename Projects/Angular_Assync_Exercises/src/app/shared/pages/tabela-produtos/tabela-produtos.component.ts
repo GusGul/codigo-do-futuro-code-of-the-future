@@ -1,3 +1,4 @@
+import { ProductObserverService } from '../../../services/ProductObserver';
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { Product } from 'src/app/interfaces/Produto';
@@ -10,7 +11,10 @@ import { ProductService } from 'src/app/services/ProductService';
 })
 export class TabelaProdutosComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(
+    private router:Router,
+    private productObserverService:ProductObserverService
+    ) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +32,7 @@ export class TabelaProdutosComponent implements OnInit {
   delete(product:Product){
     ProductService.deleteProduct(product);
     this.products = ProductService.getProducts()
+    this.productObserverService.updateQuantity();
   }
 
 }

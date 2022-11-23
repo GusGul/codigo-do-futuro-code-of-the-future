@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ExercicioDiretivasComponent } from './shared/components/exercicio-diretivas/exercicio-diretivas.component';
-import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exercicio-pipes.component';
-import { MainComponent } from './main/main.component';
-import { PropertyEventComponent } from './shared/components/property-event/property-event.component';
-import { ExercicioProdutosComponent } from './shared/components/exercicio-produtos/exercicio-produtos.component';
-import { TabelaProdutosComponent } from './shared/components/tabela-produtos/tabela-produtos.component';
+import { ExercicioDiretivasComponent } from './shared/pages/exercicio-diretivas/exercicio-diretivas.component';
+import { ExercicioPipesComponent } from './shared/pages/exercicio-pipes/exercicio-pipes.component';
+import { MainComponent } from './shared/components/main/main.component';
+import { ExercicioProdutosComponent } from './shared/pages/exercicio-produtos/exercicio-produtos.component';
+import { TabelaProdutosComponent } from './shared/pages/tabela-produtos/tabela-produtos.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PropertyEventComponent } from './shared/pages/property-event/property-event.component';
+import { ExercicioHttpApiComponent } from './shared/pages/exercicio-http-api/exercicio-http-api.component';
 
 const routes: Routes = [
   {path:'', component: MainComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path:'product', component: ExercicioProdutosComponent},
   {path:'product/:id', component: ExercicioProdutosComponent},
   {path:'product-list', component: TabelaProdutosComponent},
+  {path:'http-api', component: ExercicioHttpApiComponent},
+  {path:'**', component: NotFoundComponent},
 ];
 
 @NgModule({

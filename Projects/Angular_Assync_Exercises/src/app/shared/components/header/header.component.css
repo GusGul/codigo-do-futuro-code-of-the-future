@@ -13,3 +13,12 @@
     position: relative;
     left: 0;
   }
+
+  .nav-link {
+    display: inline;
+  }
+
+  .active {
+    background-color: rgba(99,99,99,0.5);
+    border-radius: 3px 4px;
+  }

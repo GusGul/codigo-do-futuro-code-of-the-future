@@ -1,10 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: rgb(0,0,0,0.9);
+    color: white;
+}
+
+hr {
+    background-color: white;
 }
 
 button {
