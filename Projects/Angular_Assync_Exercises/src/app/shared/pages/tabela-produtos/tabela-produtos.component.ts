@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { ProductObserverService } from '../../../services/ProductObserver';
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
@@ -12,14 +13,24 @@ import { ProductService } from 'src/app/services/ProductService';
 export class TabelaProdutosComponent implements OnInit {
 
   constructor(
+    private http:HttpClient,
     private router:Router,
     private productObserverService:ProductObserverService
     ) { }
 
   ngOnInit(): void {
+    this.productService = new ProductService(this.http)
+    this.listaProducts()
   }
 
-  public products:Product[] = ProductService.getProducts();
+  private productService:ProductService = {} as ProductService
+  public products:Product[] | undefined = []
+  public quantity = 0;
+
+  private async listaProducts(){
+    this.products = await this.productService.lista();
+    this.quantity = this.products ? length : 0;
+  }
 
   new(){
     this.router.navigateByUrl("/product");
@@ -29,10 +40,12 @@ export class TabelaProdutosComponent implements OnInit {
     this.router.navigateByUrl("/product/"+product.id);
   }
 
-  delete(product:Product){
-    ProductService.deleteProduct(product);
-    this.products = ProductService.getProducts()
-    this.productObserverService.updateQuantity();
+  async delete(product:Product){
+    if(confirm("Confirma ?")){
+      this.productService.excluirPorId(product.id);
+      this.products = await this.productService.lista()
+      this.productObserverService.updateQuantity();
+    }
   }
 
 }

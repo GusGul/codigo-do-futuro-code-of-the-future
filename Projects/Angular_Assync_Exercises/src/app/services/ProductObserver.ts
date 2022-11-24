@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { ProductService } from 'src/app/services/ProductService';
 import { Injectable } from "@angular/core";
 
@@ -6,13 +7,14 @@ import { Injectable } from "@angular/core";
 })
 export class ProductObserverService {
 
-    constructor() {
+    constructor(private http:HttpClient) {
         this.updateQuantity()
     }
 
     public quantity:Number = 0
 
-    updateQuantity(){
-        this.quantity = ProductService.getProducts().length
+    async updateQuantity(){
+        let lista = await new ProductService(this.http).lista();
+        this.quantity = lista ? length : 0;
     }
 }

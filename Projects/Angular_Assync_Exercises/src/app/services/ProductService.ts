@@ -15,53 +15,27 @@ export class ProductService {
         private http:HttpClient
     ) { }
 
-    private static listOfProducts:Product[] = [];
-
-    public async getProducts():Promise<Product[] | undefined> {
-        let products:Product[] | undefined = await firstValueFrom(this.http.get<Product[]>(`${this.API_FAKE}/products`));
-        return products
+    public async lista(): Promise<Product[] | undefined> {
+        let products:Product[] | undefined = await firstValueFrom(this.http.get<Product[]>(`${environment.API_FAKE}/products`))
+        return products;
     }
 
-    public static setProduct(product:Product):void {
-        product.id = ProductService.getProducts().length + 1
-        ProductService.listOfProducts.push(product);
+    public async criar(product:Product): Promise<Product | undefined> {
+        let productRest:Product | undefined = await firstValueFrom(this.http.post<Product>(`${environment.API_FAKE}/products/`, product))
+        return productRest;
     }
 
-    public static updateProduct(product:Product):void {
-        for(let i=0; i<ProductService.listOfProducts.length; i++) {
-            let productDb = ProductService.listOfProducts[i]
-            if(productDb.id == product.id){
-                productDb = {
-                    ...product
-                }
-                break
-            }
-        }
+    public async update(product:Product): Promise<Product | undefined> {
+        let productRest:Product | undefined = await firstValueFrom(this.http.put<Product>(`${environment.API_FAKE}/products/${product.id}`, product))
+        return productRest;
     }
 
-    public static deleteProduct(product:Product):void {
-        let newList = []
-        for(let i=0; i<ProductService.listOfProducts.length; i++) {
-            let productDb = ProductService.listOfProducts[i]
-            if(productDb.id != product.id){
-                newList.push(productDb)
-            }
-        }
-        ProductService.listOfProducts = newList
+    public async buscaPorId(id:Number): Promise<Product | undefined> {
+        return await firstValueFrom(this.http.get<Product | undefined>(`${environment.API_FAKE}/products/${id}`))
     }
 
-    static searchProductId(id: Number):Product {
-        let product:Product = {} as Product
-
-        for(let i=0; i<ProductService.listOfProducts.length; i++){
-            let productDb = ProductService.listOfProducts[i]
-            if(productDb.id == id){
-                product = productDb
-                break
-            }
-        }
-
-        return product;
+    public excluirPorId(id:Number) {
+        firstValueFrom(this.http.delete(`${environment.API_FAKE}/products/${id}`))
     }
 
 }
