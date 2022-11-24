@@ -23,6 +23,7 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 - Aula 07 - Rotas e Módulos | Class 07 - Routes and Modules
 - Aula 08 - Interfaces | Class 08 - Interfaces
 - Aula 09 - Formulários | Class 09 - Forms
+- Aula 10 - Bibliotecas e Deploy Firebase | Class 10 - Libraries and Firebase Deploy
 
 ## Aulas Síncronas | Live Classes
 
