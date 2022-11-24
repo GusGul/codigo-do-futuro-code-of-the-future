@@ -25,11 +25,10 @@ export class TabelaProdutosComponent implements OnInit {
 
   private productService:ProductService = {} as ProductService
   public products:Product[] | undefined = []
-  public quantity = 0;
+  public quantity = this.productObserverService.quantity;
 
   private async listaProducts(){
     this.products = await this.productService.lista();
-    this.quantity = this.products ? length : 0;
   }
 
   new(){

@@ -1,11 +1,11 @@
 <div class="centraliza">
-    <!--<div *ngIf="quantity <= 0">
+    <div *ngIf="quantity <= 0">
         <button class="btn btn-primary mb-3" (click)="new()">Add a New Product</button>
         <div class="alert alert-primary" role="alert">
             There's no products on the list!
         </div>
-    </div>-->
-    <div *ngIf="1 == 1">
+    </div>
+    <div *ngIf="quantity > 0">
         <button class="btn btn-primary mb-3" (click)="new()">Add a New Product</button>
         <table class="table table-dark bg-primary">
             <thead>

@@ -15,6 +15,6 @@ export class ProductObserverService {
 
     async updateQuantity(){
         let lista = await new ProductService(this.http).lista();
-        this.quantity = lista ? length : 0;
+        this.quantity = lista ? lista.length : 0;
     }
 }
