@@ -1,1 +1,1 @@
-[ { "id": 1, "name": "Banana", "description": "Banana nanica", "price": "4.90" }, { "id": 2, "name": "Apple", "description": "Apple pear", "price": "8.50" }, { "id": 3, "name": "Orange", "description": "Orange lime", "price": "9" } ]
+[{"id":1,"name":"Banana","description":"Banana nanica","price":"4.90"},{"id":2,"name":"Apple","description":"Apple pear","price":"8.50"},{"id":3,"name":"Orange","description":"Orange lime","price":8}]
