@@ -1,15 +1,25 @@
 import { Product } from "../interfaces/Produto";
+import { HttpClient } from '@angular/common/http';
+import { environment } from "src/environments/environment";
+import { Injectable } from "@angular/core";
+import { firstValueFrom } from "rxjs";
 
+@Injectable({
+    providedIn: 'root'
+  })
 export class ProductService {
 
-    constructor() {
-        
-    }
+    API_FAKE = environment.API_FAKE;
+
+    constructor(
+        private http:HttpClient
+    ) { }
 
     private static listOfProducts:Product[] = [];
 
-    public static getProducts():Product[] {
-        return this.listOfProducts
+    public async getProducts():Promise<Product[] | undefined> {
+        let products:Product[] | undefined = await firstValueFrom(this.http.get<Product[]>(`${this.API_FAKE}/products`));
+        return products
     }
 
     public static setProduct(product:Product):void {
