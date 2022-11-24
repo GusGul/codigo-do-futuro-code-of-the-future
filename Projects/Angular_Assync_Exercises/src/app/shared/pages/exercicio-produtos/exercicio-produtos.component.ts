@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { ProductObserverService } from '../../../services/ProductObserver';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Product } from 'src/app/interfaces/Produto';
+import { Product } from 'src/app/interfaces/produto';
 import { ProductService } from 'src/app/services/ProductService';
 
 @Component({
