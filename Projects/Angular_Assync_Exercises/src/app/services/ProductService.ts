@@ -11,7 +11,7 @@ export class ProductService {
     public static getProducts():Product[] {
         return this.listOfProducts
     }
-
+    
     public static setProduct(product:Product):void {
         product.id = ProductService.getProducts().length + 1
         ProductService.listOfProducts.push(product);

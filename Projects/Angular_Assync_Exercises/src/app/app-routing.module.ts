@@ -1,3 +1,5 @@
+import { DetalhesContatoComponent } from './shared/components/detalhes-contato/detalhes-contato.component';
+import { ContatosComponent } from './shared/pages/contatos/contatos.component';
 import { ExCountriesComponent } from './shared/pages/ex-countries/ex-countries.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path:'product/:id', component: ExercicioProdutosComponent},
   {path:'product-list', component: TabelaProdutosComponent},
   {path:'http-api', component: ExercicioHttpApiComponent},
+  {path:'contatos', component: ContatosComponent},
+  {path:'contatos/:id', component: DetalhesContatoComponent},
   {path:'countries', component: ExCountriesComponent},
   {path:'**', component: NotFoundComponent},
 ];

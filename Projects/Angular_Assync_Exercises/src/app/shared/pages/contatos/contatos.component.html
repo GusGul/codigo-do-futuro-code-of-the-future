@@ -1,0 +1,31 @@
+<div class="container text-center p-5">
+
+    <div class="spinner-border" role="status" *ngIf="loading">
+        <span class="sr-only"></span>
+    </div>
+
+    <div *ngIf="errorLoading">
+        <h2>Deu erro! 😭</h2>
+        <button class="btn btn-warning" type="button" (click)="carregarContatos()">Tentar Novamente</button>
+    </div>
+
+    <div>
+        <table class="table table-hover table-dark" *ngIf="!loading && !errorLoading">
+            <thead class="table-active">
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contato of contatos">
+                    <td>{{ contato.nome }}</td>
+                    <td>
+                        <button class="btn btn-primary" (click)="irParaDetalhes(contato.id)">Ver detalhes</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+
+</div>

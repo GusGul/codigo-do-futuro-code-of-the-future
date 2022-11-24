@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { ExercicioHttpApiComponent } from './pages/exercicio-http-api/exercicio-http-api.component';
 import { ExCountriesComponent } from './pages/ex-countries/ex-countries.component';
+import { ContatosComponent } from './pages/contatos/contatos.component';
+import { DetalhesContatoComponent } from './components/detalhes-contato/detalhes-contato.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ExCountriesComponent } from './pages/ex-countries/ex-countries.componen
     TabelaProdutosComponent,
     ExercicioHttpApiComponent,
     ExCountriesComponent,
+    ContatosComponent,
+    DetalhesContatoComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,49 @@
+<div class="container text-center p-5">
+
+    <div class="spinner-border margem" role="status" *ngIf="loading">
+        <span class="sr-only"></span>
+    </div>
+
+    <div *ngIf="errorLoading" class="margem">
+        <h2>Deu erro! 😭</h2>
+    </div>
+
+    <div *ngIf="!loading && !errorLoading">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-4 bg-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <p class="mb-0 text-light">Nome</p>
+                                <p class="text-muted mb-0">{{ contato.nome }}</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <p class="mb-0 text-light">CPF</p>
+                                <p class="text-muted mb-0">{{ contato.cpf }}</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <p class="mb-0 text-light">Banco</p>
+                                <p class="text-muted mb-0">{{ contato.banco }}</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <p class="mb-0 text-light">Agência</p>
+                                <p class="text-muted mb-0">{{ contato.ag }}</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <p class="mb-0 text-light">Conta Corrente</p>
+                                <p class="text-muted mb-0">{{ contato.cc }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" (click)="voltar()">Voltar</button>
+        </div>
+
+    </div>
