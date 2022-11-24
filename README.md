@@ -14,7 +14,7 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
   - Arrow Functions
   - Arrays; Spreads
   - Destructuring
-  - SPA; PWA; Web Components]
+  - SPA; PWA; Web Components
 - Aula 04 - JavaScript: Propriedades e Eventos | Class 04 - JavaScript: Properties and Events
   - Data Binding; Property Binding; Event Binding; Two Way Data Binding
   - Augury
