@@ -9,6 +9,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 }); */
 router.get('/', HomeController.index);
+
 router.get('/products', ProductsController.index);
+router.post('/products', ProductsController.create);
 
 module.exports = router;
