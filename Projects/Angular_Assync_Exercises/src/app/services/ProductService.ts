@@ -2,6 +2,10 @@ import { Product } from "../interfaces/Produto";
 
 export class ProductService {
 
+    constructor() {
+        
+    }
+
     private static listOfProducts:Product[] = [];
 
     public static getProducts():Product[] {
