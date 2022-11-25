@@ -1,3 +1,4 @@
+import { LoginComponent } from './shared/pages/login/login.component';
 import { DetalhesContatoComponent } from './shared/components/detalhes-contato/detalhes-contato.component';
 import { ContatosComponent } from './shared/pages/contatos/contatos.component';
 import { ExCountriesComponent } from './shared/pages/ex-countries/ex-countries.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'contatos', component: ContatosComponent},
   {path:'contatos/:id', component: DetalhesContatoComponent},
   {path:'countries', component: ExCountriesComponent},
+  {path:'login', component: LoginComponent},
   {path:'**', component: NotFoundComponent},
 ];
 

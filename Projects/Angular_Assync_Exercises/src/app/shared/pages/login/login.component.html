@@ -1,0 +1,31 @@
+<div class="text-center topo">
+
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="form-signin pt-5">
+
+        <div class="p-2">
+            <input 
+                class="form-control" type="email" placeholder="Email" 
+                name="email" [(ngModel)]="email" email required
+                [class.is-invalid]="exibeErro('email', form)" #emailInput>
+            <div *ngIf="exibeErro('email', form)" class="invalid-feedback">
+                E-mail inválido.
+            </div>
+        </div>
+
+        <div class="p-2">
+            <input 
+                class="form-control" type="password" placeholder="Senha" 
+                name="password" [(ngModel)]="password" required
+                [class.is-invalid]="exibeErro('password', form)">
+            <div *ngIf="exibeErro('password', form)" class="invalid-feedback" #passwordInput>
+                Senha inválida.
+            </div>
+        </div>
+
+        <div class="p-2">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+        </div>
+
+    </form>
+
+</div>

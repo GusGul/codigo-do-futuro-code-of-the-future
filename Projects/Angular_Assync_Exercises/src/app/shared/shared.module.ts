@@ -13,6 +13,7 @@ import { ExercicioHttpApiComponent } from './pages/exercicio-http-api/exercicio-
 import { ExCountriesComponent } from './pages/ex-countries/ex-countries.component';
 import { ContatosComponent } from './pages/contatos/contatos.component';
 import { DetalhesContatoComponent } from './components/detalhes-contato/detalhes-contato.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DetalhesContatoComponent } from './components/detalhes-contato/detalhes
     ExCountriesComponent,
     ContatosComponent,
     DetalhesContatoComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,
