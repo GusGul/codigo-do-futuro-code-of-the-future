@@ -14,7 +14,7 @@ import { PropertyEventComponent } from './shared/pages/property-event/property-e
 import { ExercicioHttpApiComponent } from './shared/pages/exercicio-http-api/exercicio-http-api.component';
 
 const routes: Routes = [
-  {path:'', component: MainComponent},
+  {path:'home', component: MainComponent},
   {path:'property-binding', component: PropertyEventComponent },
   {path:'diretivas', component: ExercicioDiretivasComponent },
   {path:'pipes', component: ExercicioPipesComponent },
@@ -25,7 +25,7 @@ const routes: Routes = [
   {path:'contatos', component: ContatosComponent},
   {path:'contatos/:id', component: DetalhesContatoComponent},
   {path:'countries', component: ExCountriesComponent},
-  {path:'login', component: LoginComponent},
+  {path:'', component: LoginComponent},
   {path:'**', component: NotFoundComponent},
 ];
 

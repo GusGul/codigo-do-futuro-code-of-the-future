@@ -12,3 +12,9 @@ a {
     color: black;
     margin: 20px auto;
 }
+
+div {
+    margin: 35vh auto 0 auto;
+    width: 100%;
+    height: 100%;
+}

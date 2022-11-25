@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { formatCurrency } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
@@ -14,8 +15,11 @@ export class LoginComponent implements OnInit {
 
   email!:string;
   password!:string;
+  mensagem:Boolean = false
 
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -34,16 +38,15 @@ export class LoginComponent implements OnInit {
       }
 
       return;
+    } else {
+      if(this.email === "gustavo@alunos.com" && this.password === "123456"){
+        localStorage.setItem("logado", "true")
+        this.router.navigateByUrl("/product-list");
+      } else {
+        this.mensagem = true;
+        return;
+      }
     }
-  }
-  
-  exibeErro(nomeControle: string, form: any) {
-    if (!form.controls[nomeControle]) {
-      return false
-    }
-
-    return !form.controls[nomeControle]?.invalid && form.controls[nomeControle]?.touched;
-  }
-  
+  }  
 
 }

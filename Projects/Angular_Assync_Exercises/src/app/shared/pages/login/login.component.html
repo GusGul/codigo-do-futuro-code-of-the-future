@@ -6,20 +6,18 @@
             <input 
                 class="form-control" type="email" placeholder="Email" 
                 name="email" [(ngModel)]="email" email required
-                [class.is-invalid]="exibeErro('email', form)" #emailInput>
-            <div *ngIf="exibeErro('email', form)" class="invalid-feedback">
-                E-mail inválido.
-            </div>
+                [ngClass]="form.controls['email']?.invalid && form.controls['email']?.touched ? 'is-invalid' : ''" #emailInput>
         </div>
 
         <div class="p-2">
             <input 
                 class="form-control" type="password" placeholder="Senha" 
                 name="password" [(ngModel)]="password" required
-                [class.is-invalid]="exibeErro('password', form)">
-            <div *ngIf="exibeErro('password', form)" class="invalid-feedback" #passwordInput>
-                Senha inválida.
-            </div>
+                [ngClass]="form.controls['password']?.invalid && form.controls['password']?.touched ? 'is-invalid' : ''" #passwordInput>
+        </div>
+
+        <div *ngIf="mensagem" class="alert alert-danger mt-3 mb-3">
+            Email ou senha incorretos.
         </div>
 
         <div class="p-2">
