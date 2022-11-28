@@ -1,18 +1,17 @@
 <form class="centraliza" *ngIf="product">
     <h2 class="page-section-heading text-center text-uppercase text-light mb-0">{{title}}</h2>
     <div class="form-group">
-      <label for="name">Product Name</label>
+      <label for="inputName">Product Name</label>
       <input type="text" class="form-control" id="inputName" name="name" [(ngModel)]="product.name" placeholder="Name here" required="">
     </div>
     <div class="form-group">
-      <label for="price">Price</label>
+      <label for="inputPrice">Price</label>
       <input type="number" class="form-control" id="inputPrice" name="price" [(ngModel)]="product.price" placeholder="0.0">
     </div>
     <div class="form-group">
-        <label for="desc">Description</label>
+        <label for="inputDesc">Description</label>
         <textarea class="form-control" id="inputDesc" name="description" [(ngModel)]="product.description" rows="3" placeholder="Your description here"></textarea>
     </div>
 
     <button type="button" class="btn btn-primary mb-2" (click)="add()" [disabled]="unfilled">{{ textoBotao }}</button>
 </form>
-
