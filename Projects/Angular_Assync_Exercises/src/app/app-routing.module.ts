@@ -1,3 +1,4 @@
+import { AutenticadoGuard } from './services/autenticado.guard';
 import { LoginComponent } from './shared/pages/login/login.component';
 import { DetalhesContatoComponent } from './shared/components/detalhes-contato/detalhes-contato.component';
 import { ContatosComponent } from './shared/pages/contatos/contatos.component';
@@ -14,19 +15,27 @@ import { PropertyEventComponent } from './shared/pages/property-event/property-e
 import { ExercicioHttpApiComponent } from './shared/pages/exercicio-http-api/exercicio-http-api.component';
 
 const routes: Routes = [
-  {path:'home', component: MainComponent},
-  {path:'property-binding', component: PropertyEventComponent },
-  {path:'diretivas', component: ExercicioDiretivasComponent },
-  {path:'pipes', component: ExercicioPipesComponent },
-  {path:'product', component: ExercicioProdutosComponent},
-  {path:'product/:id', component: ExercicioProdutosComponent},
-  {path:'product-list', component: TabelaProdutosComponent},
-  {path:'http-api', component: ExercicioHttpApiComponent},
-  {path:'contatos', component: ContatosComponent},
-  {path:'contatos/:id', component: DetalhesContatoComponent},
-  {path:'countries', component: ExCountriesComponent},
-  {path:'', component: LoginComponent},
-  {path:'**', component: NotFoundComponent},
+  { path: 'home', component: MainComponent },
+  { path: 'property-binding', component: PropertyEventComponent },
+  { path: 'diretivas', component: ExercicioDiretivasComponent },
+  { path: 'pipes', component: ExercicioPipesComponent },
+  { path: 'product', component: ExercicioProdutosComponent, canActivate: [AutenticadoGuard] },
+  {
+    path: 'product/:id',
+    component: ExercicioProdutosComponent,
+    canActivate: [AutenticadoGuard],
+    children: [
+      { path: '', redirectTo:'update', pathMatch: 'full' },
+      { path: 'update', component: ExercicioProdutosComponent }
+    ]
+  },
+  { path: 'product-list', component: TabelaProdutosComponent, canActivate: [AutenticadoGuard] },
+  { path: 'http-api', component: ExercicioHttpApiComponent, canActivate: [AutenticadoGuard] },
+  { path: 'contatos', component: ContatosComponent, canActivate: [AutenticadoGuard] },
+  { path: 'contatos/:id', component: DetalhesContatoComponent, canActivate: [AutenticadoGuard] },
+  { path: 'countries', component: ExCountriesComponent },
+  { path: '', component: LoginComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

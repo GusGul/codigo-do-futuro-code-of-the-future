@@ -43,6 +43,9 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/product-list" routerLinkActive="active">Products List<span> ( {{ this.productObserverService.quantity }} )</span></a>
           </li>
+          <li class="nav-item" *ngIf="logadoService.logado">
+            <a class="nav-link" href="javascript:;" (click)="logadoService.deslogar()">Sair</a>
+          </li>
         </ul>
       </div>
       <!-- Collapsible wrapper -->
