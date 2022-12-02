@@ -1,3 +1,4 @@
+import { EditPermGuard } from './services/edit-perm.guard';
 import { AutenticadoGuard } from './services/autenticado.guard';
 import { LoginComponent } from './shared/pages/login/login.component';
 import { DetalhesContatoComponent } from './shared/components/detalhes-contato/detalhes-contato.component';
@@ -23,7 +24,7 @@ const routes: Routes = [
   {
     path: 'product/:id',
     component: ExercicioProdutosComponent,
-    canActivate: [AutenticadoGuard],
+    canActivate: [EditPermGuard],
     children: [
       { path: '', redirectTo:'update', pathMatch: 'full' },
       { path: 'update', component: ExercicioProdutosComponent }
