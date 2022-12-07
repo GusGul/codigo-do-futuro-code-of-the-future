@@ -8,7 +8,9 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 ## Projetos | Projects
 
 ### 1 - Angular
-- [Projeto-Radar](https://github.com/GusGul/projeto-radar)
+- [Projeto Radar](https://github.com/GusGul/projeto-radar)
+- [Simple API - Projeto Radar](https://github.com/GusGul/projeto-radar-back-end)
+
 ### 2 - .Net
 - [Projeto-?]
 
