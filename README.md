@@ -4,7 +4,18 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 [Professor | Teacher - Danilo Aparecido](https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAce0SUBo-evw_-UTiCDvRgyEhMratZT51A&keywords=danilo%20aparecido%20dos%20santos&origin=RICH_QUERY_SUGGESTION&position=0&searchId=ce8d26d2-4dca-4800-a1d2-a0dd65fdf5d3&sid=nkG)
 
+
+## Projetos | Projects
+
+### 1 - Angular
+- [Projeto-Radar](https://github.com/GusGul/projeto-radar)
+### - .Net
+- [Projeto-?]
+
+
 ## Aulas Assíncronas | Recorded Classes
+
+### Front-End
 
 - Aula 01 - Metodologias Ágeis | Class 01 - Agile Methodology
 - Aula 02 - Git | Class 02 - Git
@@ -23,6 +34,13 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 - Aula 07 - Rotas e Módulos | Class 07 - Routes and Modules
 - Aula 08 - Interfaces | Class 08 - Interfaces
 - Aula 09 - Formulários | Class 09 - Forms
+- Aula 10 - Bibliotecas e Deploy com Firebase | Class 10 - Libraries and Deploy with Firebase
+
+### Back-End
+
+- Aula 01 - Identity Server e Visual Studio | Class 01 - Identity Server and Visual Studio
+- Aula 02 - Orientação a Objetos | Class 02 - Object Oriented
+
 
 ## Aulas Síncronas | Live Classes
 
@@ -37,4 +55,9 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 ### Back-End
 
-- 
+- Aula 01 - Introdução ao .Net | Class 01 - Introduction to .Net
+- Aula 02 - Introdução ao .Net II | Class 02 II - Introduction to .Net
+- Aula 03 - Introdução ao .Net III | Class 03 III - Introduction to .Net
+- Aula 04 - Frameworks em .Net | Class 04 - .Net Frameworks
+- Aula 05 - Frameworks em .Net II | Class 05 II - .Net Frameworks
+
