@@ -52,6 +52,7 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 - Aula 04 - Angular: Componentes I | Class 01 - Angular: Components I
 - Aula 05 - Angular: Componentes II | Class 02 - Angular: Components II 
 - Aula 06 - Angular: Componentes III | Class 03 - Angular: Components III
+- Aula 07 - Aula 100% prática de Angular | Class 07 - 100% Angular pratical class
 
 ### Back-End
 
@@ -60,4 +61,5 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 - Aula 03 - Introdução ao .Net III | Class 03 III - Introduction to .Net
 - Aula 04 - Frameworks em .Net | Class 04 - .Net Frameworks
 - Aula 05 - Frameworks em .Net II | Class 05 II - .Net Frameworks
+- Aula 06 - Aula 100% prática de .Net | Class 06 - 100% .Net pratical class
 
