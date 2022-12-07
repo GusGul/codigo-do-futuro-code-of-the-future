@@ -6,12 +6,6 @@
         <img src="favicon.ico" height="30" width="30" alt="" loading="lazy" />
       </a>
   
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-  
       <!-- Collapsible wrapper -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Left links -->
@@ -44,7 +38,7 @@
             <a class="nav-link" routerLink="/product-list" routerLinkActive="active">Products List<span> ( {{ this.productObserverService.quantity }} )</span></a>
           </li>
           <li class="nav-item" *ngIf="logadoService.logado">
-            <a class="nav-link" href="javascript:;" (click)="logadoService.deslogar()">Sair</a>
+            <a class="nav-link border border-danger rounded" href="javascript:;" (click)="logadoService.deslogar()">Sair</a>
           </li>
         </ul>
       </div>

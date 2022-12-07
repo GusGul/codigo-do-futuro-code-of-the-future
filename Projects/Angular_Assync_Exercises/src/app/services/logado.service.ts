@@ -20,6 +20,11 @@ export class LogadoService {
     return this.logado
   }
 
+  public veriricaAdm():boolean{
+    this.notificar()
+    return this.adm
+  }
+
   public notificar(){
     this.logado = localStorage.getItem("logado") ? true : false
     this.adm = localStorage.getItem("adm") ? true : false
