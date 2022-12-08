@@ -4,6 +4,16 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 [Professor | Teacher - Danilo Aparecido](https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAce0SUBo-evw_-UTiCDvRgyEhMratZT51A&keywords=danilo%20aparecido%20dos%20santos&origin=RICH_QUERY_SUGGESTION&position=0&searchId=ce8d26d2-4dca-4800-a1d2-a0dd65fdf5d3&sid=nkG)
 
+### Contato | Contact
+<div id="badges">
+  <span> </span>
+  <a href = "mailto:gustavosalgadolima+git@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
+  </a>
+  <a href = "https://www.linkedin.com/in/gustavo-salgado-lima">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
 
 ## Projetos | Projects
 
