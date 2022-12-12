@@ -1,0 +1,15 @@
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.csproj.AssemblyReference.cache
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.AssemblyInfoInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.AssemblyInfo.cs
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.csproj.CoreCompileInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\bin\Debug\net7.0\basico.exe
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\bin\Debug\net7.0\basico.deps.json
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\bin\Debug\net7.0\basico.runtimeconfig.json
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\bin\Debug\net7.0\basico.dll
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\bin\Debug\net7.0\basico.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.dll
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\refint\basico.dll
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\basico.genruntimeconfig.cache
+D:\GitHub\codigo-do-futuro\BackEnd\basico\basico\obj\Debug\net7.0\ref\basico.dll
