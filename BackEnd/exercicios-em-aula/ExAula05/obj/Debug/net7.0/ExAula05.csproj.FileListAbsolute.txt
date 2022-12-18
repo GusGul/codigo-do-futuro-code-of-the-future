@@ -1,0 +1,15 @@
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\bin\Debug\net7.0\ExAula05.exe
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\bin\Debug\net7.0\ExAula05.deps.json
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\bin\Debug\net7.0\ExAula05.runtimeconfig.json
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\bin\Debug\net7.0\ExAula05.dll
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\bin\Debug\net7.0\ExAula05.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.csproj.AssemblyReference.cache
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.AssemblyInfoInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.AssemblyInfo.cs
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.csproj.CoreCompileInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.dll
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\refint\ExAula05.dll
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ExAula05.genruntimeconfig.cache
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula05\obj\Debug\net7.0\ref\ExAula05.dll

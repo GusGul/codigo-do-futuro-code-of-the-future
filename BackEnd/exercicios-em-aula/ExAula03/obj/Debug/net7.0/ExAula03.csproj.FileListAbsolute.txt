@@ -1,0 +1,5 @@
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula03\obj\Debug\net7.0\ExAula03.csproj.AssemblyReference.cache
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula03\obj\Debug\net7.0\ExAula03.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula03\obj\Debug\net7.0\ExAula03.AssemblyInfoInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula03\obj\Debug\net7.0\ExAula03.AssemblyInfo.cs
+D:\GitHub\codigo-do-futuro\BackEnd\exercicios-em-aula\ExAula03\obj\Debug\net7.0\ExAula03.csproj.CoreCompileInputs.cache
