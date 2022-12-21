@@ -11,8 +11,8 @@ namespace Business
     public class Pessoa
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Tipo { get; set; } 
+        public string Nome { get; set; } = default!;
+        public string Tipo { get; set; } = default!;
 
         public virtual void Cadastrar(Pessoa pessoa)
         {
@@ -20,7 +20,7 @@ namespace Business
 
             var pessoas = JsonSerializer.Deserialize<List<Pessoa>>(json);
 
-            pessoas.Add(pessoa);
+            pessoas?.Add(pessoa);
 
             json = JsonSerializer.Serialize(pessoas);
 

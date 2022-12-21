@@ -1,4 +1,6 @@
-﻿namespace Business
+﻿using System.Reflection;
+
+namespace Business
 {
     public class Usuario : Pessoa
     {
@@ -10,7 +12,12 @@
             this.CPF = cpf;
         }
 
-        public string CPF { get; set; }
+        private string _CPF;
+        public string CPF
+        {
+            get => typeof(Usuario).GetProperty("_CPF").GetValue("_CPF");
+            set => typeof(Usuario).GetProperty("_CPF").SetValue(null, value);
+        }
 
         public void CadastrarUsuario()
         {
