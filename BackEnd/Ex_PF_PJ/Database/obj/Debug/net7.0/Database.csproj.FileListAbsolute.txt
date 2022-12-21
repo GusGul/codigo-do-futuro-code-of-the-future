@@ -1,0 +1,12 @@
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\bin\Debug\net7.0\Database.deps.json
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\bin\Debug\net7.0\Database.dll
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\bin\Debug\net7.0\Database.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\Database.csproj.AssemblyReference.cache
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\Database.AssemblyInfoInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\Database.AssemblyInfo.cs
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\Database.csproj.CoreCompileInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\Database.dll
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\refint\Database.dll
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\Database.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Database\obj\Debug\net7.0\ref\Database.dll

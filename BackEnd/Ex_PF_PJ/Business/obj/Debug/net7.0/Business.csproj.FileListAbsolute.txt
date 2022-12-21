@@ -1,0 +1,12 @@
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\bin\Debug\net7.0\Business.deps.json
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\bin\Debug\net7.0\Business.dll
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\bin\Debug\net7.0\Business.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\Business.csproj.AssemblyReference.cache
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\Business.AssemblyInfoInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\Business.AssemblyInfo.cs
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\Business.csproj.CoreCompileInputs.cache
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\Business.dll
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\refint\Business.dll
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\Business.pdb
+D:\GitHub\codigo-do-futuro\BackEnd\Ex_PF_PJ\Business\obj\Debug\net7.0\ref\Business.dll

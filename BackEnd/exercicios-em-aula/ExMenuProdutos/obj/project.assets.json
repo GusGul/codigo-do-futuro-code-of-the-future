@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\codigo-do-futuro\\BackEnd\\exercicios-em-aula\\basico\\basico.csproj",
+      "projectUniqueName": "D:\\GitHub\\codigo-do-futuro\\BackEnd\\exercicios-em-aula\\ExMenuProdutos\\basico.csproj",
       "projectName": "basico",
-      "projectPath": "D:\\GitHub\\codigo-do-futuro\\BackEnd\\exercicios-em-aula\\basico\\basico.csproj",
+      "projectPath": "D:\\GitHub\\codigo-do-futuro\\BackEnd\\exercicios-em-aula\\ExMenuProdutos\\basico.csproj",
       "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\codigo-do-futuro\\BackEnd\\exercicios-em-aula\\basico\\obj\\",
+      "outputPath": "D:\\GitHub\\codigo-do-futuro\\BackEnd\\exercicios-em-aula\\ExMenuProdutos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\VSCode\\Shared\\NuGetPackages"
@@ -57,11 +57,17 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
