@@ -28,6 +28,9 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 - [Projeto Currículo em Angular](https://github.com/GusGul/Curriculum_Angular)
 - [Exercícios em Angular](https://github.com/GusGul/Exercicios_Angular)
 - [Projeto Livros/Biblioteca](https://github.com/GusGul/Projeto_Livros-Biblioteca)
+- [Projeto Produtos](https://github.com/GusGul/ProjetoProdutos-AulaCodDoFut)
+- [Projeto Gerenciamento de Locação de Carros](https://github.com/GusGul/Gerenciamento-Locacao-Carros)
+- [Projeto First Dotnet Web Api](https://github.com/GusGul/first-web-api-dotnet)
 
 ## Aulas Assíncronas | Recorded Classes
 
