@@ -32,6 +32,7 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 - [Projeto Produtos](https://github.com/GusGul/ProjetoProdutos-AulaCodDoFut)
 - [Projeto Gerenciamento de Locação de Carros](https://github.com/GusGul/Gerenciamento-Locacao-Carros)
 - [Projeto First Dotnet Web Api](https://github.com/GusGul/first-web-api-dotnet)
+- [Projeto Dotnet API with Authorizations](https://github.com/GusGul/Auth-API-cs-swagger/tree/main)
 
 ## Aulas Assíncronas | Recorded Classes
 
