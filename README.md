@@ -19,10 +19,11 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 ### 1 - Angular
 - [Projeto Radar](https://github.com/GusGul/projeto-radar)
-- [Simple API - Projeto Radar](https://github.com/GusGul/projeto-radar-back-end) (old and basic API)
+- [Simple API - Projeto Radar](https://github.com/GusGul/projeto-radar-back-end)
 
 ### 2 - .Net
-- [API Radar](https://github.com/BGJKW/Radar_Api) newest API for "Projeto Radar"
+- [Radar API](https://github.com/BGJKW/Radar_Api)
+- [Radar API - Front-End](https://github.com/BGJKW/projeto-radar-angular)
 
 #### Related Projects
 - [Projeto Currículo em Angular](https://github.com/GusGul/Curriculum_Angular)
