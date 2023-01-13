@@ -19,10 +19,10 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 ### 1 - Angular
 - [Projeto Radar](https://github.com/GusGul/projeto-radar)
-- [Simple API - Projeto Radar](https://github.com/GusGul/projeto-radar-back-end)
+- [Simple API - Projeto Radar](https://github.com/GusGul/projeto-radar-back-end) (old and basic API)
 
 ### 2 - .Net
-- [Projeto-?]
+- [API Radar](https://github.com/BGJKW/Radar_Api) newest API for "Projeto Radar"
 
 #### Related Projects
 - [Projeto Currículo em Angular](https://github.com/GusGul/Curriculum_Angular)
@@ -64,6 +64,12 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 
 - Aula 01 - Identity Server e Visual Studio | Class 01 - Identity Server and Visual Studio
 - Aula 02 - Orientação a Objetos | Class 02 - Object Oriented
+- Aula 03 - Princípios do SOLID | Class 07 - SOLID Principles
+- Aula 04 - Boas práticas de desenvolvimento | Class 09 - Good development habits
+- Aula 05 - Bacno de dados: MySql | Class 11 - Database: MySql 
+- Aula 06 - Padrão de projeto MVC | Class 13 - MVC Design Pattern
+- Aula 07 - Message Brokers e ID de Rastreabilidade | Class 07 - Message Brokers and ID Traceability
+- Aula 08 - Idempotência, Circuit Breaker e telemetria
 
 
 ## Aulas Síncronas | Live Classes
@@ -86,4 +92,10 @@ Repositório utilizado para guardar as aulas e exercícios, tudo que for propost
 - Aula 04 - Frameworks em .Net | Class 04 - .Net Frameworks
 - Aula 05 - Frameworks em .Net II | Class 05 II - .Net Frameworks
 - Aula 06 - Aula 100% prática de .Net | Class 06 - 100% .Net pratical class
-
+- Aula 07 - Aula 100% prática de MySQL | Class 07 - 100% MySQL pratical class
+- Aula 08 - API's I
+- Aula 09 - API's II
+- Aula 10 - API's III
+- Aula 11 - Testes e tratamento de erros I | Class 11 - Tests and error handling I
+- Aula 12 - Aula 100% prática de .Net II | Class 08 - 100% .Net pratical class II
+- Aula 13 - Testes e tratamento de erros II | Class 13 - Tests and error handling II
